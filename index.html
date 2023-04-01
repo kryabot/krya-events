@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script>
+		 const evtSource = new EventSource('http://localhost:5001/spambots');
+
+		 evtSource.addEventListener('event', function(evt) {
+			  const data = JSON.parse(evt.data);
+			  console.log(data);
+			  // Use data here
+		 },false);
+		</script>
+	</head> 
+	<body> 
+	event index
+	</body>
+</html>

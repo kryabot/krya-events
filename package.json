@@ -1,0 +1,19 @@
+{
+  "name": "krya-events",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js > out.log &",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "eventemitter3": "^4.0.7",
+    "express": "^4.16.4",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "nodemon": "^1.19.1"
+  }
+}
